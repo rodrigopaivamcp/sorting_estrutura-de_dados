@@ -1,13 +1,27 @@
-from vetor import Vetor
-from lista_simples import ListaEncadeada
-from lista_dupla import ListaDuplamenteEncadeada
-from lista_circular import ListaCircular
+from fila import Fila
+from pilha import Pilha 
 
-vetor = Vetor(5)
-vetor.inserir(10)
-vetor.inserir(20)
-vetor.inserir(30)
-vetor.exibir()
-print("Busca:", vetor.buscar(20))
-vetor.remover(1)
-vetor.exibir()
+fila = Fila()
+
+fila.enfileirar(10)
+fila.enfileirar(20)
+fila.enfileirar(30)
+
+print(fila.frente())       
+print(fila.desenfileirar())
+print(fila.tamanho()) 
+
+
+from pilha import Pilha
+
+pilha = Pilha()
+
+pilha.empilhar(10)
+pilha.empilhar(20)
+pilha.empilhar(30)
+
+print(pilha.topo())       
+print(pilha.desempilhar()) 
+print(pilha.topo())        
+print(pilha.tamanho())    
+
